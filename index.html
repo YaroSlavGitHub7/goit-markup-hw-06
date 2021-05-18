@@ -267,42 +267,42 @@
         <div class="container"> 
             <ul class="list client-icons card-set-client">
                 <li class="client-icons-item"> 
-                  <a href="" class="link client-link" target="_blank" rel="noopener noreferrer">
+                  <a href="" class="client-link" target="_blank" rel="noopener noreferrer">
                     <svg class="client-icons-svg" width=106px height=60px>
                       <use class="" href="./img/icons/sprite.svg#icon-logo"></use> 
                       </svg>
                   </a>
                 </li>
                 <li class="client-icons-item"> 
-                  <a href="" class="link client-link" target="_blank" rel="noopener noreferrer">
+                  <a href="" class="client-link" target="_blank" rel="noopener noreferrer">
                     <svg class="client-icons-svg" width=106px height=60px>
                       <use class="" href="./img/icons/sprite.svg#icon-logo1"></use> 
                       </svg>
                   </a>
                 </li>
                 <li class="client-icons-item"> 
-                  <a href="" class="link client-link" target="_blank" rel="noopener noreferrer">
+                  <a href="" class="client-link" target="_blank" rel="noopener noreferrer">
                     <svg class="client-icons-svg" width=106px height=60px>
                       <use class="" href="./img/icons/sprite.svg#icon-logo2"></use> 
                       </svg>
                   </a>
                 </li>
                 <li class="client-icons-item"> 
-                  <a href="" class="link client-link" target="_blank" rel="noopener noreferrer">
+                  <a href="" class="client-link" target="_blank" rel="noopener noreferrer">
                     <svg class="client-icons-svg" width=106px height=60px>
                       <use class="" href="./img/icons/sprite.svg#icon-logo3"></use> 
                       </svg>
                   </a>
                 </li>
                     <li class="client-icons-item"> 
-                      <a href="" class="link client-link" target="_blank" rel="noopener noreferrer">
+                      <a href="" class="client-link" target="_blank" rel="noopener noreferrer">
                         <svg class="client-icons-svg" width=106px height=60px>
                           <use class="" href="./img/icons/sprite.svg#icon-logo4"></use> 
                           </svg>
                       </a>
                     </li>
                     <li class="client-icons-item"> 
-                      <a href="" class="link client-link" target="_blank" rel="noopener noreferrer">
+                      <a href="" class="client-link" target="_blank" rel="noopener noreferrer">
                         <svg class="client-icons-svg" width=106px height=60px>
                           <use class="" href="./img/icons/sprite.svg#icon-logo5"></use> 
                         </svg>
@@ -360,8 +360,24 @@
         <div class="ftr-maling">
           <p class="ftr-maling-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
           <ul class="ftr-maling-forms">
-            <li class="list "></li>
-            <li class="list "></li>
+            <li class="list ftr-maling-list">
+
+              <form name="ftr-form-email"  autocomplete="off" >
+                <label for="email" class="ftr-label-email">
+                <input type="email" name="email" class="ftr-input-email" placeholder="Email" />
+                </label>
+              </form>
+
+            </li>
+            <li class="list ftr-button-li">
+              <button type="button" class="button ftr-button-send blue-background">
+                <div class="ftr-btn-send">
+                <p class="ftr-button-txt" >Подписаться</p>
+                <svg class="ftr-icons-send">
+                  <use class="" href="./img/icons/sprite-form.svg#icon-icon-send"></use>
+                </svg></div>
+              </button>
+            </li>
         </div>
       </div>
     </footer> 
@@ -375,3 +391,57 @@
     <script src="./js/modal.js"></script> 
 </body>
 </html>
+
+<form class="form" name="" autocomplete="off" >
+  <div class="form-field"></div>
+    <input type="text" class="form-input" name="name" id="name"/>
+    <label for="name" class="form-label">Имя</label>
+  </div>
+  <div class="form-field"></div>
+      <input type="tel" class="form-input" name="tel" id="tel"/>
+      <label for="tel" class="form-label">Телефон</label>
+  </div>
+  <div class="form-field"></div>
+    <input type="email" class="form-input" name="mail" id="mail"/>
+    <label for="name" class="form-label">Почта</label>
+  </div>
+  </label>
+</form>
+
+
+<!-- Код Юли
+ <section class="section content-box" id="contact-form">
+            <h2 class="title section-title">Онлайн-запись</h2>
+            <form class="contact-form">
+              <input
+                type="text"
+                name="user-name"
+                class="contact-form-field"
+                pattern="^[a-zA-ZА-Яа-яЁё\s]+$"
+                placeholder="Имя*"
+                required
+                autofocus
+              />
+              <input
+                type="tel"
+                name="user-phone"
+                class="contact-form-field"
+                pattern="[0-9]{10}"
+                placeholder="Телефон*"
+                required
+              />
+              <textarea
+                class="contact-form-field contact-form-message"
+                name="user-message"
+                placeholder="сообщение"
+              ></textarea>
+              <input type="checkbox" name="user-checkbox" class="checkbox visually-hidden" id="checkbox" />
+              <label class="checkbox-label" for="checkbox">
+                Соглашаюсь с рассылкой и принимаю <a href="#" class="checkbox-link">Условия договора</a></label
+              >
+
+              <button type="submit" class="btn">отправить</button>
+            </form>
+          </section>
+
+-->
