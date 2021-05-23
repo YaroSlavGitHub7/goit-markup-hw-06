@@ -43,8 +43,6 @@ nav a.active {
     color:var(--object-color);
 }
 
-
-
 .list {
     margin: 0;
     padding-left: 0;
@@ -167,7 +165,9 @@ header {
 .link:hover,
 .link:focus {
   color: var(--object-color);
-  
+  transition-duration: 250ms;
+    transition-property: color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover,
 .button:focus {
@@ -176,6 +176,9 @@ header {
   box-shadow:   0px 2px 2px 0px rgba(0, 0, 0, 0.12),
                 0px 1px 2px 0px rgba(0, 0, 0, 0.08),
                 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  transition-duration: 250ms;
+    transition-property: color, background-color, box-shadow;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);              
 }
 
 .main-title {
@@ -449,6 +452,7 @@ footer {
                   0px 4px 4px rgba(0, 0, 0, 0.06),
                    1px 4px 6px rgba(0, 0, 0, 0.16);
     transition-duration: 250ms;
+    transition-property: box-shadow;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .overlay-text {
@@ -470,6 +474,7 @@ footer {
     opacity: 1;
     transform: translateY(0%);
     transition-duration: 250ms;
+    transition-property: opacity, transform;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
  }
 
@@ -501,7 +506,6 @@ footer {
 }
 
 
-
 .social-icons {
     display: inline-flex;
     padding-inline-start: 0px;
@@ -520,10 +524,16 @@ footer {
 .social-icons-link:hover .social-icons-svg,
 .social-icons-link:focus .social-icons-svg {
       fill: var(--brand-color);
+      transition-duration: 250ms;
+    transition-property:  fill; 
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-icons-link:hover,
 .social-icons-link:focus {
      background-color:  var(--object-color);
+     transition-duration: 250ms;
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icons-link {
@@ -561,7 +571,7 @@ footer {
 .client-icons :not(:last-child) {
     margin-right: 30px;
 }
-.client-link{
+.client-link {
     border: 1px solid #AFB1B8 ;
     box-sizing: border-box;
     border-radius: 4px;
@@ -574,7 +584,6 @@ footer {
     transition-duration: 250ms;
     transition-property:  fill, border-color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .card-set-client {
@@ -585,8 +594,10 @@ footer {
 .client-link:hover,
 .client-link:focus  {
     fill:  var(--object-color);
-    border-color:var(--object-color) ;
-
+    border-color: var(--object-color);
+    transition-duration: 250ms;
+    transition-property:  fill, border-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .ftr-dark-bg {
@@ -617,14 +628,12 @@ footer {
     background-color:rgba(255, 255, 255, 0.1);
 }
 
-
-
-.ftr-maling {
+.ftr-mailing {
     width: 570px;
     margin-left: auto;
 }
 
-.ftr-maling-title {
+.ftr-mailing-title {
     font-weight: bold;
     font-size: 14px;
     line-height: 1.14;
@@ -677,10 +686,6 @@ footer {
     fill: var(--brand-color);
 }
 
-
-
-  
-
 .backdrop {
     position: fixed;
     top: 0;
@@ -709,6 +714,30 @@ footer {
     background: #FFFFFF;
     width: 30px;
     height: 30px;
+    
+  }
+.btn-close-cross {
+    width: 11px;
+    height: 11px;
+}
+
+.modal-btn-close:focus  {
+    background-image: url(../img/icons/cross.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    transition-duration: 250ms;
+    transition-property:  background-image; 
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ }
+  .modal-btn-close:focus .btn-close-cross {
+    opacity: 0;
+    visibility: hidden;
+    transition-duration: 250ms;
+    transition-property: opacity,  visibility; 
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
   }
 .modal-title {
     margin-bottom: 12px;
@@ -736,14 +765,9 @@ footer {
   }
 
 
-.modal-forms {
-   
-    
-}
 .modal-form-field {
  position: relative;
- 
-}
+ }
 
 .modal-form-icon {
     position: absolute;
@@ -780,10 +804,9 @@ footer {
     fill: var(--object-color);
     transition-duration: 250ms;
     transition-property:  fill; 
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
 }
-
 
 .form-input:focus {
     outline: none; 
@@ -792,7 +815,6 @@ footer {
     transition-property:  border; 
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
-
 
 .form-comment {
     /*display: block;*/
@@ -806,7 +828,17 @@ footer {
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
     padding: 12px 16px;
+    resize:  none;
 }
+
+.form-comment:focus {
+    outline: none; 
+    border: 1px solid var(--object-color);
+    transition-duration: 250ms;
+    transition-property:  border; 
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+}
+
 
 .form-button {
     display: block;
@@ -829,7 +861,6 @@ footer {
 }
 .form-user-accept {
     position: relative;
-   
     margin-bottom: 30px;
 }
 
@@ -840,38 +871,32 @@ footer {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--grey-color);
+    padding-left: 37px;
 }
 
 .checkbox-input {
     -webkit-appearance: none ;
     -moz-appearance: none ;
     appearance: none;
-    
 }
 
-
 .form-icon-check {
-    
     position: absolute;
     width: 16px;
     height: 15px;
     background-color: var(--brand-color);
     border: 2px solid rgba(33, 33, 33, 1);
     border-radius: 4px;
+    transform: translateX(-23px);
     
-    padding-left: 14px;
-    margin-right: 10px;
 }
 .checkbox-input:checked +.form-icon-check {
     border-color: transparent;
     background-size: contain;
     background-origin: border-box; 
     background-image: url(/img/icons/icon-check.svg);
-   
-  
+    
 }
-
-
 
 .form-check-link {
     font-size: 14px;
@@ -882,87 +907,4 @@ footer {
 }
 
 
-   /* Код Юли */
-  .contact-form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.contact-form-field {
-  width: calc((100% - 30px) / 2);
-  padding-bottom: 8px;
-  margin-bottom: 44px;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  color: #fff;
-  background: transparent;
-  border-left: 0;
-  border-right: 0;
-  border-top: 0;
-  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
-  outline: none;
-}
-
-.contact-form-field:-webkit-autofill,
-.contact-form-field:-webkit-autofill:hover,
-.contact-form-field:-webkit-autofill:focus {
-  -webkit-text-fill-color: #fff;
-  -webkit-box-shadow: 0 0 0px 1000px var(--dark-bg) inset;
-}
-
-.contact-form-field:focus {
-  border-bottom-color: #fff;
-}
-
-.contact-form-field:valid:not(:placeholder-shown):focus {
-  color: green;
-  border-bottom-color: green;
-}
-
-.contact-form-field:invalid:not(:placeholder-shown):focus {
-  color: red;
-  border-bottom-color: red;
-}
-
-.contact-form-field::placeholder {
-  text-transform: uppercase;
-  color: rgba(157, 164, 189, 0.4);
-}
-
-.checkbox-label {
-  font-style: italic;
-  margin-bottom: 44px;
-}
-
-.checkbox-label::before {
-  content: "";
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  border: 1px solid var(--second-bg);
-  border-radius: 3px;
-}
-
-.checkbox:checked + .checkbox-label::before {
-  background-image: url(../images/check.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  background-color: var(--accent-cl);
-  border-color: var(--accent-cl);
-}
-
-.checkbox-link {
-  color: var(--accent-cl);
-}
-
-.contact-form-message {
-  resize: none;
-  width: 100%;
-  height: 75px;
-}
-  
   

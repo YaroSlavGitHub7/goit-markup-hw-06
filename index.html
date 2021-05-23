@@ -357,11 +357,14 @@
             </li>
           </ul>
         </div>
-        <div class="ftr-maling">
-          <p class="ftr-maling-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
-          <form name=""  autocomplete="off" >
+        <div class="ftr-mailing">
+          <p class="ftr-mailing-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
+          <form name="#"  autocomplete="off" >
             <label for="email" class="ftr-label-email">
-              <input type="email" name="email" class="ftr-input-email" placeholder="Email" />
+              <input type="email" 
+              name="email" 
+              class="ftr-input-email" 
+              placeholder="Email" />
             </label>
             <button type="submit" class="ftr-button-send blue-background">
               <div class="ftr-btn-send">
@@ -376,10 +379,16 @@
     </footer> 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-btn-close" data-modal-close>X</button>
+        <button class="modal-btn-close" data-modal-close>
+          <span class="btn-close">
+            <svg class="btn-close-cross">
+                  <use class="" href="./img/icons/sprite-form.svg#icon-cross"></use>
+                </svg>
+          </span>
+        </button>
          <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
             <div class="">
-              <form class="modal-forms" name="" autocomplete="off">
+              <form class="modal-forms" name="#" autocomplete="off">
                     <div class="modal-form-field">
                      <label for="name" class="form-label">Имя</label>
                       <input type="text" class="form-input" name="name" id="name"/>
@@ -397,36 +406,29 @@
                     <div class="modal-form-field">
                       <label for="mail" class="form-label">Почта</label>
                       <input type="email" class="form-input" name="mail" id="mail"/>
-                      <svg class="modal-form-icon">
+                        <svg class="modal-form-icon">
                         <use class="form-icon" href="./img/icons/sprite-form.svg#icon-mail"></use>
                         </svg>
                     </div> 
                         <label for="comment" class="form-label">Коментарий</label>
                         <textarea
-                      class="form-comment "
-                      name="comment"
-                      placeholder="Введите текст"></textarea> 
-                
-                    
-                      <div class="form-user-accept">
-                          
-                          
-                        <label class="form-check-label" for="checkbox">
-                          
+                        class="form-comment "
+                        name="comment"
+                        placeholder="Введите текст"></textarea> 
+                     <div class="form-user-accept">
+                          <label class="form-check-label" for="checkbox">
                             <input 
                             type="checkbox" name="user-checkbox"
                             class="checkbox-input" 
                             id="checkbox"/>
                             <span class="form-icon-check "></span>
-                          
-                        Соглашаюсь с рассылкой и принимаю <a href="#" class="form-check-link">Условия договора</a>
-                        </label >
+                            Соглашаюсь с рассылкой и принимаю <a href="#" class="form-check-link">Условия договора</a>
+                          </label >
                       </div>
                         <div class="form-btn">
                           <button type="submit" class="form-button blue-background">Отправить</button>
                         </div>
                </form>
-               
             </div> 
        </div>
     </div>
@@ -434,41 +436,6 @@
 </body>
 </html>
 
-
-<!-- Код Юли <--visually-hidden-->
- <section class="section content-box" id="contact-form">
-            <h2 class="title section-title">Онлайн-запись</h2>
-            <form class="contact-form">
-              <input
-                type="text"
-                name="user-name"
-                class="contact-form-field"
-                pattern="^[a-zA-ZА-Яа-яЁё\s]+$"
-                placeholder="Имя*"
-                required
-                autofocus
-              />
-              <input
-                type="tel"
-                name="user-phone"
-                class="contact-form-field"
-                pattern="[0-9]{10}"
-                placeholder="Телефон*"
-                required
-              />
-              <textarea
-                class="contact-form-field contact-form-message"
-                name="user-message"
-                placeholder="сообщение"
-              ></textarea>
-              <input type="checkbox" name="user-checkbox" class="checkbox visually-hidden" id="checkbox" />
-              <label class="checkbox-label" for="checkbox">
-                Соглашаюсь с рассылкой и принимаю <a href="#" class="checkbox-link">Условия договора</a>
-              </label >
-
-              <button type="submit" class="btn">отправить</button>
-            </form>
-          </section> -->
 
          
             
