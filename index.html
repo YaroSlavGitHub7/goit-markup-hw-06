@@ -378,35 +378,64 @@
       <div class="modal">
         <button class="modal-btn-close" data-modal-close>X</button>
          <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
-            <div class="modal-forms">
-                  <form class="form" name="" autocomplete="off">
-                  
-                          <div class="form-field">
-                           
-                            <label for="name" class="form-label">Имя
-                            <input type="text" class="form-input" name="name" id="name"/>
-                            </label>
-                          </div>
-                          <div class="form-field">
-                              
-                              <label for="tel" class="form-label">Телефон
-                                <input type="tel" class="form-input" name="tel" id="tel"/></label>
-                          </div>
-                          <div class="form-field">
-                              
-                              <label for="name" class="form-label">Почта
-                                <input type="email" class="form-input" name="mail" id="mail"/></label>
-                          </div>
-                   </form>
+            <div class="">
+              <form class="modal-forms" name="" autocomplete="off">
+                    <div class="modal-form-field">
+                     <label for="name" class="form-label">Имя</label>
+                      <input type="text" class="form-input" name="name" id="name"/>
+                        <svg class="modal-form-icon">
+                        <use class="form-icon" href="./img/icons/sprite-form.svg#icon-user"></use>
+                        </svg>
+                    </div>
+                    <div class="modal-form-field">
+                      <label for="tel" class="form-label">Телефон</label>
+                      <input type="tel" class="form-input" name="tel" id="tel"/>
+                        <svg class="modal-form-icon">
+                        <use class="form-icon" href="./img/icons/sprite-form.svg#icon-tel"></use>
+                        </svg>
+                    </div>
+                    <div class="modal-form-field">
+                      <label for="mail" class="form-label">Почта</label>
+                      <input type="email" class="form-input" name="mail" id="mail"/>
+                      <svg class="modal-form-icon">
+                        <use class="form-icon" href="./img/icons/sprite-form.svg#icon-mail"></use>
+                        </svg>
+                    </div> 
+                        <label for="comment" class="form-label">Коментарий</label>
+                        <textarea
+                      class="form-comment "
+                      name="comment"
+                      placeholder="Введите текст"></textarea> 
+                
+                    
+                      <div class="form-user-accept">
+                          
+                          
+                        <label class="form-check-label" for="checkbox">
+                          
+                            <input 
+                            type="checkbox" name="user-checkbox"
+                            class="checkbox-input" 
+                            id="checkbox"/>
+                            <span class="form-icon-check "></span>
+                          
+                        Соглашаюсь с рассылкой и принимаю <a href="#" class="form-check-link">Условия договора</a>
+                        </label >
+                      </div>
+                        <div class="form-btn">
+                          <button type="submit" class="form-button blue-background">Отправить</button>
+                        </div>
+               </form>
+               
             </div> 
-      </div>
+       </div>
     </div>
     <script src="./js/modal.js"></script> 
 </body>
 </html>
 
 
-Код Юли
+<!-- Код Юли <--visually-hidden-->
  <section class="section content-box" id="contact-form">
             <h2 class="title section-title">Онлайн-запись</h2>
             <form class="contact-form">
@@ -441,40 +470,7 @@
             </form>
           </section> -->
 
-          <div class="modal-1">
-            <button class="modal-btn-close" data-modal-close>X</button>
-             <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
-                <div class="">
-                  <form class="modal-forms" name="" autocomplete="off">
-  
-                         <label for="name" class="form-label">Имя</label>
-                        <input type="text" class="form-input" name="name" id="name"/>
-                         
-                          <label for="tel" class="form-label">Телефон</label>
-                          <input type="tel" class="form-input" name="tel" id="tel"/>
-                         
-                              <label for="mail" class="form-label">Почта</label>
-                                <input type="email" class="form-input" name="mail" id="mail"/>
-                         
-                          <!-- <div class="modal-form-field"> -->
-                              
-                              <label for="comment" class="form-label">Коментарий</label>
-                          <textarea
-                          class="form-comment "
-                          name="comment"
-                          placeholder="Введите текст"></textarea> 
-                    
-                        <!-- </div> -->
-                        <div class="user-accept"><input type="checkbox" name="user-checkbox" class="checkbox visually-hidden" id="checkbox" />
-                   <label class="checkbox-label" for="checkbox">
-                     Соглашаюсь с рассылкой и принимаю <a href="#" class="checkbox-link">Условия договора</a>
-                   </label ></div>
-                   <div class="form-btn">
-                   <button type="submit" class="form-button blue-background">Отправить</button></div>
-                   </form>
-                   
-                </div> 
-           </div>
+         
             
 
           
