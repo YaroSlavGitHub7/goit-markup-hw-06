@@ -714,18 +714,25 @@ footer {
   .modal-btn-close {
     cursor: pointer;
     position: absolute;
-    top: 8px;
-    right: 8px;
-    border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    background: #FFFFFF;
     width: 30px;
     height: 30px;
+    right: 8px;
+    top: 8px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+   
+    
+    
+    
     
   }
+  
 .btn-close-cross {
     width: 11px;
     height: 11px;
+    background-image: url(../img/icons/crossX.svg);
+    fill: #212121;
 }
 
 .modal-btn-close:focus  {
@@ -895,7 +902,7 @@ footer {
     border-color: transparent;
     background-size: contain;
     background-origin: border-box; 
-    background-image: url(/img/icons/icon-check.svg);
+    background-image: url(../img/icons/icon-check.svg);
     transition-duration: 250ms;
     transition-property: border; 
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
