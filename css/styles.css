@@ -344,9 +344,9 @@ header {
     color:var(--grey-color);
    }
 
- .team-item-info {
+ .team__item--padding {
      padding-top: 30px ;
-     padding-bottom: 16px ;
+     padding-bottom: 30px ;
  }  
 .team-name {
     font-size: 16px;
@@ -355,7 +355,11 @@ header {
     text-align: center;
     letter-spacing: 0.03em;
     color:var(--black-color);
-    padding-bottom: 10px ;
+   
+}
+.team__name--profession {
+     margin-top: 10px;
+     margin-bottom: 16px;
 }
 .grey-text {
     color:var(--grey-color) ;
@@ -512,9 +516,9 @@ footer {
     margin-block-start: 0px;
     margin-block-end: 0px;
 }
-.social-icons-team {
+/*.social-icons-team {
     padding-bottom: 30px;
-}
+}*/
 .social-icons-svg {
     width: 20px;
     height: 20px;
@@ -732,9 +736,9 @@ footer {
     width: 11px;
     height: 11px;
     background-image: url(../img/icons/crossX.svg);
-    fill: #212121;
+   
 }
-
+.modal-btn-close:hover,
 .modal-btn-close:focus  {
     background-image: url(../img/icons/cross.svg);
     background-size: contain;
@@ -745,7 +749,8 @@ footer {
     transition-property:  background-image; 
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
  }
-  .modal-btn-close:focus .btn-close-cross {
+ .modal-btn-close:hover .btn-close-cross ,
+  .modal-btn-close:focus .btn-close-cross    {
     opacity: 0;
     visibility: hidden;
     transition-duration: 250ms;
@@ -809,14 +814,13 @@ footer {
     border-radius: 4px;
     padding-left: 42px;
 }
-.form-input:focus +.modal-form-icon{ 
+.form-input:focus +.modal-form-icon { 
     fill: var(--object-color);
     transition-duration: 250ms;
     transition-property:  fill; 
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
 }
-
 .form-input:focus {
     outline: none; 
     border: 1px solid var(--object-color);
