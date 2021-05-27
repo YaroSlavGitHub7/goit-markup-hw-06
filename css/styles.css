@@ -825,12 +825,19 @@ footer {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 .form-comment:focus {
     outline: none; 
     border: 1px solid var(--object-color);
     color: #212121;
+
  }   
+.form-comment-color:focus::-webkit-input-placeholder  {
+      color: var(--object-color);
+}
+
+.form-comment-color:focus::-moz-placeholder  {
+      color: var(--object-color);
+ }
 
 .form-button {
     display: block;
@@ -851,6 +858,7 @@ footer {
                  0px 2px 1px rgba(0, 0, 0, 0.2);
 
 }
+
 .form-user-accept {
     position: relative;
     margin-bottom: 30px;
