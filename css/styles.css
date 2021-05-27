@@ -829,15 +829,17 @@ footer {
     outline: none; 
     border: 1px solid var(--object-color);
     color: #212121;
-
  }   
 .form-comment-color:focus::-webkit-input-placeholder  {
-      color: var(--object-color);
+    color: var(--object-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .form-comment-color:focus::-moz-placeholder  {
-      color: var(--object-color);
- }
+    color: var(--object-color);   
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .form-button {
     display: block;
