@@ -164,10 +164,8 @@ header {
 
 .link:hover,
 .link:focus {
-  color: var(--object-color);
-  transition-duration: 250ms;
-    transition-property: color;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--object-color);
+    
 }
 .button:hover,
 .button:focus {
@@ -176,9 +174,6 @@ header {
   box-shadow:   0px 2px 2px 0px rgba(0, 0, 0, 0.12),
                 0px 1px 2px 0px rgba(0, 0, 0, 0.08),
                 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
-  transition-duration: 250ms;
-    transition-property: color, background-color, box-shadow;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);              
 }
 
 .main-title {
@@ -419,7 +414,6 @@ footer {
     margin-bottom: 50px;
  }
 
-
 .card-portf {
     margin-bottom: -1px;
 }
@@ -442,6 +436,9 @@ footer {
 
  .link-card {
     position: relative;
+    transition-duration: 250ms;
+    transition-property: box-shadow;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
  }
  
 .card-portf {
@@ -455,10 +452,7 @@ footer {
     box-shadow:  0px 1px 1px rgba(0, 0, 0, 0.12), 
                   0px 4px 4px rgba(0, 0, 0, 0.06),
                    1px 4px 6px rgba(0, 0, 0, 0.16);
-    transition-duration: 250ms;
-    transition-property: box-shadow;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+ }
 .overlay-text {
     opacity: 0;
     position: absolute;
@@ -470,6 +464,7 @@ footer {
     background-color: rgba(33, 150, 243, 0.9);
     transform: translateY(100%);
     transition-duration: 250ms;
+    transition-property: opacity, transform;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -477,9 +472,6 @@ footer {
 .link-card:focus .overlay-text {
     opacity: 1;
     transform: translateY(0%);
-    transition-duration: 250ms;
-    transition-property: opacity, transform;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
  }
 
 .card-title {
@@ -516,28 +508,22 @@ footer {
     margin-block-start: 0px;
     margin-block-end: 0px;
 }
-/*.social-icons-team {
-    padding-bottom: 30px;
-}*/
 .social-icons-svg {
     width: 20px;
     height: 20px;
     fill: rgba(175, 177, 184, 1);
+    transition-duration: 250ms;
+    transition-property:  fill; 
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
    }
 
 .social-icons-link:hover .social-icons-svg,
 .social-icons-link:focus .social-icons-svg {
       fill: var(--brand-color);
-      transition-duration: 250ms;
-    transition-property:  fill; 
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-icons-link:hover,
 .social-icons-link:focus {
      background-color:  var(--object-color);
-     transition-duration: 250ms;
-    transition-property: background-color;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icons-link {
@@ -548,7 +534,7 @@ footer {
     height: 44px;
     border-radius: 50%;
     transition-duration: 250ms;
-    transition-property: color, background-color;
+    transition-property: color, fill, background-color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -599,9 +585,6 @@ footer {
 .client-link:focus  {
     fill:  var(--object-color);
     border-color: var(--object-color);
-    transition-duration: 250ms;
-    transition-property:  fill, border-color;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .ftr-dark-bg {
@@ -652,19 +635,21 @@ footer {
     line-height: 1.25;
     color: rgba(255, 255, 255, 0.6);
     background-color: var(--dark-bg);
+    outline: none;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 16px;
-
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .ftr-input-email:focus {
-    transition-property: outline;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid var(--object-color);
+    color: var(--white-color);
 } 
 
 .ftr-button-send {
@@ -713,9 +698,9 @@ footer {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-  }
+}
 
-  .modal-btn-close {
+.modal-btn-close {
     cursor: pointer;
     position: absolute;
     width: 30px;
@@ -725,18 +710,18 @@ footer {
     border-radius: 50%;
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
-   
-    
-    
-    
-    
-  }
+    transition-duration: 250ms;
+    transition-property:  background-image; 
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
   
 .btn-close-cross {
     width: 11px;
     height: 11px;
     background-image: url(../img/icons/crossX.svg);
-   
+   transition-duration: 250ms;
+    transition-property: opacity,  visibility; 
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-btn-close:hover,
 .modal-btn-close:focus  {
@@ -745,19 +730,14 @@ footer {
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;
-    transition-duration: 250ms;
-    transition-property:  background-image; 
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
  }
- .modal-btn-close:hover .btn-close-cross ,
-  .modal-btn-close:focus .btn-close-cross    {
+.modal-btn-close:hover .btn-close-cross,
+.modal-btn-close:focus .btn-close-cross  {
     opacity: 0;
     visibility: hidden;
-    transition-duration: 250ms;
-    transition-property: opacity,  visibility; 
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
-  }
+}
+
 .modal-title {
     margin-bottom: 12px;
     font-weight: bold;
@@ -795,6 +775,9 @@ footer {
     width: 12px;
     height: 12px;
     fill: rgba(33, 33, 33, 1);
+    transition-duration: 250ms;
+    transition-property:  fill; 
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-label {
@@ -813,20 +796,16 @@ footer {
     border: 1px solid rgba(33, 33, 33, 0.2); 
     border-radius: 4px;
     padding-left: 42px;
+    transition-duration: 250ms;
+    transition-property:  border; 
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-input:focus +.modal-form-icon { 
     fill: var(--object-color);
-    transition-duration: 250ms;
-    transition-property:  fill; 
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
 }
 .form-input:focus {
     outline: none; 
     border: 1px solid var(--object-color);
-    transition-duration: 250ms;
-    transition-property:  border; 
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .form-comment {
@@ -841,15 +820,17 @@ footer {
     color: rgba(117, 117, 117, 0.5);
     padding: 12px 16px;
     resize:  none;
+    transition-duration: 250ms;
+    transition-property:  border, content; 
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .form-comment:focus {
     outline: none; 
     border: 1px solid var(--object-color);
-    transition-duration: 250ms;
-    transition-property:  border; 
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+    color: #212121;
+ }   
 
 .form-button {
     display: block;
@@ -900,19 +881,16 @@ footer {
     border: 2px solid rgba(33, 33, 33, 1);
     border-radius: 4px;
     transform: translateX(-23px);
-    
+    transition-property: border ; 
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .checkbox-input:checked +.form-icon-check {
     border-color: transparent;
     background-size: contain;
     background-origin: border-box; 
     background-image: url(../img/icons/icon-check.svg);
-    transition-duration: 250ms;
-    transition-property: border; 
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
 }
-
 .form-check-link {
     font-size: 14px;
     line-height: 1.71;
