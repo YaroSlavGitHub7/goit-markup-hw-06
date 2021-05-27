@@ -809,6 +809,7 @@ footer {
 }
 
 .form-comment {
+    cursor: pointer;
     width: 100%;
     height: 120px;
     margin-bottom: 20px;
